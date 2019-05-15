@@ -5,7 +5,7 @@ const db = require('./users-model');
 const protected = require('../middleware/protected');
 
 
-
+//order is important when adding mw 
 router.get('/', protected, (req, res) => {
     db.find()
     .then(users => {

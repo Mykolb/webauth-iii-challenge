@@ -3,13 +3,14 @@ const db = require('../migrations/dbConfig');
 module.exports = {
     find,
     findBy,
+    findById,
     add
 };
 
 
 function find() {
     return db('users')
-    .select('id', 'username');
+    .select('id', 'username', 'password');
 }
 
 function findBy(filter) {
@@ -19,5 +20,11 @@ function findBy(filter) {
 
 function add(users) {
     return db('users')
-    .insert(users, 'id')
+    .insert(users)
 }
+
+function findById(id) {
+    return db('users')
+      .where({ id })
+      .first();
+  }

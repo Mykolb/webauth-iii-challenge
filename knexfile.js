@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './auth.db3' //folder created when run migrations 
+      filename: './data/auth.db3' //folder created when run migrations// don't forget to add data folfer to this, creates duplicate files & err 1 if you don't!
     },
     useNullAsDefault: true,
   },
