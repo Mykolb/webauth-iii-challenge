@@ -61,27 +61,6 @@ const generateToken = user => {
 
 
 
-// //WORKING
-//     router.get('/logout', (req, res) => {
-//         if (req.session) {
-//             //removes session
-//             req.session.destroy(err => {
-//                 if(err) {
-//                     res.status(`Logout failed. Do you want to stay logged in as ${user.username}?`)
-//                 } else {
-//                     res.send('Peace out!')
-//                 }
-//             })
-//         } else {
-//             //ends the session
-//             res.end();
-//         }
-//     })
-    
-    
-
-
-
 
 
 
