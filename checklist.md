@@ -5,7 +5,7 @@
 [x] yarn add nodemon --dev (for deployment)
 [x] yarn add dotenv
 [x] yarn add knex sqlite3
-[] yarn add bcryptjs
+[x] yarn add bcryptjs
 [] add script: 
  "scripts": {
     "server": "nodemon index.js", (auto updates server)
