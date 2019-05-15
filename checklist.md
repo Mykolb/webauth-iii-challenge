@@ -18,15 +18,15 @@
 [] npx gitignore node (to create a gitignore file)
 
 ## ORGANIZATION
-[] server file 
-[] index file 
-[] routes folder
-    [] routes files
-    [] models
+[x] server file 
+[x] index file 
+[x] routes folder
+    [x] routes files
+    [x] models
 [] migrations
-[] knex file
+[x] knex file
 [] seeds files 
-[] data folder
+[x] data folder
 [] dbConfig file 
 
 ##MIGRATIONS (way to recreate your database to particular point in time)

@@ -5,16 +5,20 @@ const cors = require('cors');
 
 
 //routers
-const protectedRouter = require('');
-const usersRouter = require('');
+const protectedRouter = require('../routes/protected-routes');
+const usersRouter = require('../routes/users-router');
 
 const server = express();
 
-server.use(expres.json());
+server.use(express.json());
 server.use(helmet());
 server.use(morgan('dev'));
 server.use(cors());
 
+
+//endpoints 
+server.use('/api/protected', protectedRouter);
+server.use('/api/users', usersRouter);
 
 server.get('/', (req, res) => {
     res.send(`<h2>We have data showing!</h2>`)
