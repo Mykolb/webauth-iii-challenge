@@ -2,6 +2,8 @@ import React from 'react';
 //import axios
 import axios from 'axios';
 //create state form for signin
+import TextField from '@material-ui/core/TextField';
+
 
 class Signin extends React.Component {
     state = {
@@ -47,14 +49,15 @@ render() {
     return (
         <div className='signup-form'>
         <form onSubmit={this.login}>
-        <input
+        <TextField
         type='text'
         placeholder='username'
         name='username'
         onChange={this.changeHandler}
         value={this.state.username}
         />
-        <input
+         &nbsp;  &nbsp;  &nbsp;  
+        <TextField
         type='password'
         placeholder='password'
         name='password'
